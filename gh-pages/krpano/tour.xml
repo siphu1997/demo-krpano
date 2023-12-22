@@ -1,0 +1,200 @@
+﻿<krpano version="1.21" title="Virtual Tour" onstart="jscall(reactKrpano.onStart())">
+
+	<events onnewscene="jscall(calc('reactKrpano.logNewScene(`' + get(xml.scene) + '`)'))" />
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+		maps_type="google"
+		maps_bing_api_key=""
+		maps_google_api_key=""
+		maps_zoombuttons="false"
+		maps_loadonfirstuse="true"
+		gyro="true"
+		gyro_keeplookingdirection="false"
+		webvr="true"
+		webvr_keeplookingdirection="true"
+		webvr_prev_next_hotspots="true"
+		autotour="false"
+		littleplanetintro="false"
+		followmousecontrol="false"
+		title="true"
+		thumbs="true"
+		thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+		thumbs_opened="false"
+		thumbs_text="false"
+		thumbs_dragging="true"
+		thumbs_onhoverscrolling="false"
+		thumbs_scrollbuttons="false"
+		thumbs_scrollindicator="false"
+		thumbs_loop="false"
+		tooltips_buttons="false"
+		tooltips_thumbs="false"
+		tooltips_hotspots="false"
+		tooltips_mapspots="false"
+		deeplinking="false"
+		loadscene_flags="MERGE"
+		loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+		loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+		loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+		loadingtext=""
+		layout_width="100%"
+		layout_maxwidth="814"
+		controlbar_width="-24"
+		controlbar_height="40"
+		controlbar_offset="20"
+		controlbar_offset_closed="-40"
+		controlbar_overlap.no-fractionalscaling="10"
+		controlbar_overlap.fractionalscaling="0"
+		design_skin_images="vtourskin.png"
+		design_bgcolor="0x2D3E50"
+		design_bgalpha="0.8"
+		design_bgborder="0"
+		design_bgroundedge="1"
+		design_bgshadow="0 4 10 0x000000 0.3"
+		design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+		design_thumbborder_padding="2"
+		design_thumbborder_bgroundedge="0"
+		design_text_css="color:#FFFFFF; font-family:Arial;"
+		design_text_shadow="1"
+	/>
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<scene name="scene_shot-panoramic-composition-bathroom_(1)"
+		title="shot-panoramic-composition-bathroom (1)" onstart=""
+		thumburl="panos/shot-panoramic-composition-bathroom_(1).tiles/thumb.jpg" lat="" lng="" alt=""
+		heading="">
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.000" vlookat="0.000" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0"
+			fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/shot-panoramic-composition-bathroom_(1).tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/shot-panoramic-composition-bathroom_(1).tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+				multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="156.037" atv="0.693"
+			linkedscene="scene_shot-panoramic-composition-bathroom_(2)" linkedscene_hoffset="46.38"
+			use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_shot-panoramic-composition-bathroom_(2)"
+		title="shot-panoramic-composition-bathroom (2)" onstart=""
+		thumburl="panos/shot-panoramic-composition-bathroom_(2).tiles/thumb.jpg" lat="" lng="" alt=""
+		heading="">
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70"
+			fovmax="140" limitview="auto" />
+
+		<preview url="panos/shot-panoramic-composition-bathroom_(2).tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/shot-panoramic-composition-bathroom_(2).tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+				multires="512,768,1600" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="22.419" atv="-12.870"
+			linkedscene="scene_shot-panoramic-composition-bathroom_(1)" linkedscene_hoffset="313.62"
+			use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.961" atv="0.533"
+			linkedscene="scene_shot-panoramic-composition-bathroom_(3)" linkedscene_hoffset="-100.42"
+			use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_shot-panoramic-composition-bathroom_(3)"
+		title="shot-panoramic-composition-bathroom (3)" onstart=""
+		thumburl="panos/shot-panoramic-composition-bathroom_(3).tiles/thumb.jpg" lat="" lng="" alt=""
+		heading="">
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70"
+			fovmax="140" limitview="auto" />
+
+		<preview url="panos/shot-panoramic-composition-bathroom_(3).tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/shot-panoramic-composition-bathroom_(3).tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+				multires="512,768,1664" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-109.457" atv="6.502"
+			linkedscene="scene_shot-panoramic-composition-bathroom_(2)" linkedscene_hoffset="460.42"
+			use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="114.100" atv="-30.732"
+			linkedscene="scene_shot-panoramic-composition-bathroom" linkedscene_hoffset="153.28"
+			use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_shot-panoramic-composition-bathroom"
+		title="shot-panoramic-composition-bathroom" onstart=""
+		thumburl="panos/shot-panoramic-composition-bathroom.tiles/thumb.jpg" lat="" lng="" alt=""
+		heading="">
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="265.986" vlookat="-2.333" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0"
+			fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/shot-panoramic-composition-bathroom.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/shot-panoramic-composition-bathroom.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+				multires="512,1024,2048" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="87.376" atv="-14.111"
+			linkedscene="scene_shot-panoramic-composition-bathroom_(3)" linkedscene_hoffset="206.72"
+			use3dtransition="true" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-80.470" atv="-4.664"
+			linkedscene="scene_shot-panoramic-composition-bedroom_(1)" linkedscene_hoffset="264.57"
+			use3dtransition="true" />
+
+	</scene>
+
+	<scene name="scene_shot-panoramic-composition-bedroom_(1)"
+		title="shot-panoramic-composition-bedroom (1)" onstart=""
+		thumburl="panos/shot-panoramic-composition-bedroom_(1).tiles/thumb.jpg" lat="" lng="" alt=""
+		heading="">
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70"
+			fovmax="140" limitview="auto" />
+
+		<preview url="panos/shot-panoramic-composition-bedroom_(1).tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/shot-panoramic-composition-bedroom_(1).tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg"
+				multires="512,1024,1792" />
+		</image>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="4.097" atv="30.174"
+			linkedscene="scene_shot-panoramic-composition-bathroom" linkedscene_hoffset="95.43"
+			use3dtransition="true" />
+
+	</scene>
+
+
+</krpano>
