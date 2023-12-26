@@ -8,7 +8,11 @@
 
 
 	<!-- predefine a DEFAULT textstyle element -->
-	<textstyle name="DEFAULT" />
+	<textstyle name="DEFAULT" fadeintime="0.1"
+	fadeouttime="0"
+	 padding="10"
+	 />
+
 	
 	
 

@@ -1,0 +1,19 @@
+﻿<krpano>
+<textstyle name="myTextStyle"
+	fadeintime="0"
+	padding="10"
+	border="false"
+	xoffset="0"
+	yoffset="-10"
+	
+/>
+
+<textstyle name="coverHotSpot"
+	fadeintime="0"
+	padding="10"
+	border="false"
+	xoffset="0"
+	yoffset="-10"
+/>
+
+</krpano>
