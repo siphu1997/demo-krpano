@@ -72,7 +72,7 @@
 
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
-	<include url="skin/vtourskin_design_black.xml" />
+	<!-- <include url="skin/vtourskin_design_black.xml" /> -->
 
 
 	<scene name="scene_shot-panoramic-composition-bathroom_(1)"
@@ -107,6 +107,7 @@
 			ath="356.037" atv="0.693"
 			depth="1000.0"
 			prealign="false"
+			onclick.addevent="showtext('Bồn tắm siêu rộng','myTextStyle')"
 			onhover.addevent="showtext('Bồn tắm siêu rộng','myTextStyle')"
 			width="50"
 			height="50"
