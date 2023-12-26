@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/demo-krpano/static/css/main.f855e6bc.css",
-    "main.js": "/demo-krpano/static/js/main.d3b16bb1.js",
-    "static/js/787.aa83fd80.chunk.js": "/demo-krpano/static/js/787.aa83fd80.chunk.js",
-    "index.html": "/demo-krpano/index.html",
-    "main.f855e6bc.css.map": "/demo-krpano/static/css/main.f855e6bc.css.map",
-    "main.d3b16bb1.js.map": "/demo-krpano/static/js/main.d3b16bb1.js.map",
-    "787.aa83fd80.chunk.js.map": "/demo-krpano/static/js/787.aa83fd80.chunk.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.41c9539c.js",
+    "static/js/787.aa83fd80.chunk.js": "/static/js/787.aa83fd80.chunk.js",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.41c9539c.js.map": "/static/js/main.41c9539c.js.map",
+    "787.aa83fd80.chunk.js.map": "/static/js/787.aa83fd80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.d3b16bb1.js"
+    "static/js/main.41c9539c.js"
   ]
 }

@@ -1,0 +1,117 @@
+<krpano>	<!-- krpano 1.20.7 -->
+
+<!-- you can exclude some hotspots from the tooltip-button effect in the tour.xml by adding abutton="false" like in this example: 
+ <hotspot name="spot5" style="skin_hotspotstyle" ath="0" atv="0" linkedscene="scene_traun_3" abutton="false" /> --> 
+
+<!-- Special text for the button like: special_button_text="I am a new text for the button" )
+example: <hotspot name="spot888" style="skin_hotspotstyle" ath="00" atv="-10" linkedscene="scene_building" special_button_text="I am a new text for the button" />  -->
+	
+
+<!-- you can rotate hotspots with rz="..." or rotate="...": 
+example: <hotspot name="spot7" style="skin_hotspotstyle" ath="40" atv="-15" linkedscene="scene_building" rz="25" /> -->
+
+<!-- works also with scale and/or distorted and/or rotate (do not use "rotate" with distorted="true"; rz can only be used wenn distorted="true")
+example: <hotspot name="spot8" style="skin_hotspotstyle" ath="00" atv="-10" linkedscene="scene_building" rotate="90" distorted="false" scale="0.2" />  -->
+
+
+
+
+<!-- hotspot text options: 
+hs_arrows: 						true = show hotspot arrows, false=REPLACE Hotspots with tooltip-buttons (default is true)
+arrow_scale_and_tooltip:		true = onover scale onover effect and tooltip original text effect if tooltips are activated in skin from krpano
+button_position:				normal = around hotspot
+								below = below Hotspot
+								parallel = parallel to hotspot
+set_hotspot_edge_center:		set to true if your hotspot arrow edge is set to center. (default is false)
+add_distance_px					add a distance from the button to the hotspot arrow in px (default is -15)
+enable_buttons_click:			enable or disable if the tooltip-buttons is clickable (default is false)
+disable_buttons_on_desktop:		true = no tooltip-buttons on desktop but on mobile and tablet, false = show tooltip-buttons on all devices (default is false)
+scale_buttons: 					scale the tooltip-buttons (default is 1.0)
+scale_mobile:					mobile scale. (default is 1.5)
+scale_tween_buttons: 			onover size of the tooltip-buttons (default is 1.1)
+only_hs_with__the_arrow_png:	true = reacts only on the Hotspots with skin/vtourskin_hotspot.png; false = all hotspots (default is true)
+exclude_nadir_and_zenith:		true = reacts not on nadir and zenith. (default is true)
+button_click_animation:			true = animate button on click, false = no animation (default is false)
+correction_version:				0 or 1 = krpano 1.20.8  ;   2 = krpano 1.20.7
+-->
+
+<hs_button_tooltip_settings 
+	hs_arrows="true" 
+	arrow_scale_and_tooltip="true"
+	button_position="below"
+	set_hotspot_edge_center="false" 
+	add_distance_px="-15" 
+	enable_buttons_click="true" 
+	disable_buttons_on_desktop="false"
+	scale_buttons="1.0" 
+	scale_mobile="1.5" 
+	scale_tween_buttons="1.1"
+	only_hs_with_the__arrow_png="false"
+	exclude_nadir_and_zenith="true"
+	button_click_animation="false"
+	correction_version="0"
+/>
+
+
+<!-- you can change the style of the tooltip hotspot textfield here -->
+<style 
+	name="hs_button_tooltip_style"	
+	handcursor="false"
+	type="text"
+    depth="1000"	
+	edge="top"
+	align="top" 
+	distorted="false"
+	renderer="webgl"
+	css="font-family:Verdana; font-style:italic; text-align:center; color:#FFFFFF; font-size:13px;"
+	vcenter="true"
+	padding="2 5 3 5"
+	wordwrap="true"
+	bg="true"
+	bgcolor="get:skin_settings.design_bgcolor" 
+    bgalpha="get:skin_settings.design_bgalpha"
+	bgborder="0"
+	bgroundedge="5"
+	bgshadow=""
+	txtshadow=""
+	mergedalpha="true"
+	oversampling="2.0"
+	mipmapping="false"
+	onautosized=""
+	enabled="true" 
+	zorder="2"
+	capture="false"	
+/>
+
+
+<!-- you can change the style of the Scene Name which is shown -->
+<layer 
+   name="text_scene"
+   type="text"
+   align="top" 
+   x="0" 
+   y="0"
+   html=""
+   css="font-family:Verdana; font-style:italic; font-size:15px; color:#FFFFFF;"
+   maxwidth="200"
+   vcenter="true"
+   padding="5 10"
+   wordwrap="true"
+   bg="true"
+   bgcolor="get:skin_settings.design_bgcolor"
+   bgalpha="get:skin_settings.design_bgalpha"
+   bgborder="0"
+   bgroundedge="0"
+   bgshadow=""
+   txtshadow=""
+   mergedalpha="true"
+   interactivecontent="false"
+   onautosized=""
+   keep="true"
+   zorder="100"
+   enabled="false"
+/>
+
+
+
+</krpano>

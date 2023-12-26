@@ -3,6 +3,7 @@
 	<events onnewscene="jscall(calc('reactKrpano.logNewScene(`' + get(xml.scene) + '`)'))" />
 
 	<include url="skin/vtourskin.xml" />
+	<include url="plugins/showtext.xml" />
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -67,13 +68,15 @@
 	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
 	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
 	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<include url="skin/vtourskin_hotspot_tooltips.xml" />
+
 	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
-	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	<include url="skin/vtourskin_design_black.xml" />
 
 
 	<scene name="scene_shot-panoramic-composition-bathroom_(1)"
-		title="shot-panoramic-composition-bathroom (1)" onstart=""
+		title="Phòng tắm" onstart=""
 		thumburl="panos/shot-panoramic-composition-bathroom_(1).tiles/thumb.jpg" lat="" lng="" alt=""
 		heading="">
 
@@ -91,12 +94,29 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="156.037" atv="0.693"
 			linkedscene="scene_shot-panoramic-composition-bathroom_(2)" linkedscene_hoffset="46.38"
-			use3dtransition="true" />
+			use3dtransition="true"
+		/>
+
+		<hotspot name="custom_spot1"
+			type="image"
+			url="skin/vtourskin_mapspotactive.png"
+			keep="false"
+			preload="false"
+			style=""
+			cssclass=""
+			ath="356.037" atv="0.693"
+			depth="1000.0"
+			prealign="false"
+			onhover.addevent="showtext('Bồn tắm siêu rộng','myTextStyle')"
+			width="50"
+			height="50"
+		/>
+
 
 	</scene>
 
 	<scene name="scene_shot-panoramic-composition-bathroom_(2)"
-		title="shot-panoramic-composition-bathroom (2)" onstart=""
+		title="Phòng tắm 2" onstart=""
 		thumburl="panos/shot-panoramic-composition-bathroom_(2).tiles/thumb.jpg" lat="" lng="" alt=""
 		heading="">
 
@@ -122,7 +142,7 @@
 	</scene>
 
 	<scene name="scene_shot-panoramic-composition-bathroom_(3)"
-		title="shot-panoramic-composition-bathroom (3)" onstart=""
+		title="Phòng tắm 3" onstart=""
 		thumburl="panos/shot-panoramic-composition-bathroom_(3).tiles/thumb.jpg" lat="" lng="" alt=""
 		heading="">
 
@@ -148,7 +168,7 @@
 	</scene>
 
 	<scene name="scene_shot-panoramic-composition-bathroom"
-		title="shot-panoramic-composition-bathroom" onstart=""
+		title="Phòng tắm 4" onstart=""
 		thumburl="panos/shot-panoramic-composition-bathroom.tiles/thumb.jpg" lat="" lng="" alt=""
 		heading="">
 
@@ -174,7 +194,7 @@
 	</scene>
 
 	<scene name="scene_shot-panoramic-composition-bedroom_(1)"
-		title="shot-panoramic-composition-bedroom (1)" onstart=""
+		title="Phòng ngủ" onstart=""
 		thumburl="panos/shot-panoramic-composition-bedroom_(1).tiles/thumb.jpg" lat="" lng="" alt=""
 		heading="">
 
